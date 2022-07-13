@@ -6,83 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/static/css/style.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
   </head>
   <body>
-    <div class="containner">
+    <div class="containner bc-black d-flex jc-center">
       <div class="containner-inner">
-        <div>
+        <div class="d-flex jc-between ai-center">
           <div>
-            <h3>FREE SHOPPING ON ALL US ORDERS OVER $50</h3>
+            <h3 class="c-white">FREE SHOPPING ON ALL US ORDERS OVER $50</h3>
           </div>
-          <div>
-            <form action="#" method="post" enctype="multipart/form-data">
-              <div>
-                <select name="currency">
-                  <option value="USD">USD</option>
-                  <option value="Euro">Euro</option>
-                  <option value="UAN">UAN</option>
-                </select>
-              </div>
-              <div>
-                <select name="language">
-                  <option value="english">english</option>
-                  <option value=" italyan">italyan</option>
-                  <option value="ukranian">ukranian</option>
-                </select>
-              </div>
-              <div></div>
-            </form>
+          <div class="d-flex ai-center jc-between w-25pr">
+            <div class="">
+              <p class="c-white">currency</p>
+            </div>
+            <div>
+              <p class="c-white">language</p>
+            </div>
+            <div>
+              <p class="c-white">my account</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="containner">
+
+    <div class="containner d-flex jc-center h-100px ai-center">
       <div class="containner-inner">
-        <div class="logo">
-          <h4>
-            COLO
-            <span>SHOP</span>
-          </h4>
-        </div>
-        <nav>
-          <a href="#">Home </a>
-          <a href="#">Shop </a>
-          <a href="#">Promotion </a>
-          <a href="#">Pages </a>
-          <a href="#">Blog </a>
-          <a href="#">Contact </a>
-        </nav>
-        <nav>
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i> </a>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
-        </nav>
-      </div>
-    </div>
-    <div class="containner">
-      <div class="containner-inner">
-        <div>
-          <h3>Spring/summer collection 2017</h3>
-          <h1>Get up to 30% off new arrivals</h1>
-          <button>shop now</button>
+        <div class="d-flex jc-between ai-center">
+          <div class="logo">
+            <h4>COLO<span class="c-red">SHOP</span></h4>
+          </div>
+          <div class="d-flex ai-center jc-between w-60pr">
+            <nav class="w-650px d-flex jc-between ai-center td-none">
+              <a href="#">Home </a>
+              <a href="#">Shop </a>
+              <a href="#">Promotion </a>
+              <a href="#">Pages </a>
+              <a href="#">Blog </a>
+              <a href="#">Contact </a>
+            </nav>
+            <nav class="d-flex jc-between ai-center w-100px">
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> </a>
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-    <div class="containner">
+    <div class="containner b-img b-repeat-no-repeat d-flex jc-center h-600px">
+      <div class="containner-inner p-relative">
+        <div class="p-relative w-35pr top-200px">
+          <h3 class="c-black-gray fs-25px">Spring/summer collection 2017</h3>
+          <h1 class="c-black-gray fs-70px m-block-0">
+            Get up to 30% off new arrivals
+          </h1>
+          <button class="button-red">shop now</button>
+        </div>
+      </div>
+    </div>
+    <div class="containner d-flex jc-center ai-center">
       <div class="containner-inner">
-        <div>
-          <button>women's</button>
-        </div>
-        <div>
-          <button>accessories's</button>
-        </div>
-        <div>
-          <button>men's</button>
+        <div class="d-flex jc-between ai-center w-100pr p-top-30px-bottom-40px">
+          <div
+            class="b-img-women w-25pr h-300px d-flex jc-center ai-center bg-position-center bg-position-center"
+          >
+            <button
+              class="w-200px h-45px bg-white border-0px tt-uppercase fs-20px br-3px"
+            >
+              women's
+            </button>
+          </div>
+          <div
+            class="b-img-accessories w-25pr h-300px d-flex jc-center ai-center bg-position-center bg-position-center"
+          >
+            <button
+              class="w-200px h-45px bg-white border-0px tt-uppercase fs-20px br-3px"
+            >
+              accessories's
+            </button>
+          </div>
+          <div
+            class="b-img-men w-25pr h-300px d-flex jc-center ai-center bg-position-center bg-position-center"
+          >
+            <button
+              class="w-200px h-45px bg-white border-0px tt-uppercase fs-20px br-3px"
+            >
+              men's
+            </button>
+          </div>
         </div>
       </div>
     </div>
