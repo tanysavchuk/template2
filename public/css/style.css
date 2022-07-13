@@ -1,1 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 0;
+}
+h1 {
+  color: var(--color-gray);
+}
+a {
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+}
 
+.b-img {
+  background-image: url(http://localhost:3000/static/img/fon.jpeg);
+  background-position-x: right;
+  background-position-y: center;
+  background-color: #8473922e;
+}
+.b-img-men {
+  background-image: url(http://localhost:3000/static/img/men.jpeg);
+}
+.b-img-women {
+  background-image: url(http://localhost:3000/static/img/women.jpeg);
+}
+.b-img-accessories {
+  background-image: url(http://localhost:3000/static/img/accessories.jpeg);
+}
+.containner-inner {
+  width: 1400px;
+}
+.d-flex {
+  display: flex;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.ai-center {
+  align-items: center;
+}
+.bc-black {
+  background: black;
+}
+.jc-evenly {
+  justify-content: space-evenly;
+}
+.c-white {
+  color: white;
+}
+.jc-center {
+  justify-content: center;
+}
+.w-25pr {
+  width: 25%;
+}
+.w-100px {
+  width: 100px;
+}
+
+.w-650px {
+  width: 650px;
+}
+.w-60pr {
+  width: 60%;
+}
+
+.c-red {
+  color: red;
+}
+.b-repeat-no-repeat {
+  background-repeat: no-repeat;
+}
+.h-100px {
+  height: 100px;
+}
+.p-relative {
+  position: relative;
+}
+.top-200px {
+  top: 200px;
+}
+.w-35pr {
+  width: 35%;
+}
+.h-600px {
+  height: 600px;
+}
+.c-black-gray {
+  color: rgb(48, 47, 47);
+}
+.fs-70px {
+  font-size: 70px;
+}
+.fs-25px {
+  font-size: 25px;
+}
+.m-block-0 {
+  margin-block: 0;
+}
+.button-red {
+  border: 0;
+  background: red;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  height: 35px;
+  width: 150px;
+  margin-top: 35px;
+}
+.w-100pr {
+  width: 100%;
+}
+.h-300px {
+  height: 300px;
+}
+.w-25pr {
+  width: 25%;
+}
+.w-200px {
+  width: 200px;
+}
+.h-45px {
+  height: 45px;
+}
+.border-0px {
+  border: 0px;
+}
+.bg-white {
+  background: white;
+}
+.tt-uppercase {
+  text-transform: uppercase;
+}
+.fs-20px {
+  font-size: 20px;
+}
+.bg-position-center {
+  background-position: center;
+}
+.p-top-30px-bottom-40px {
+  padding: 30px 0 40px 0;
+}
+.br-3px {
+  border-radius: 3px;
+}
