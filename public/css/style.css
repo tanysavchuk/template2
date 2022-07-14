@@ -11,6 +11,7 @@ h1 {
 a {
   text-decoration: none;
   color: rgb(48, 47, 47);
+  text-transform: uppercase;
 }
 
 .b-img {
@@ -78,8 +79,8 @@ a {
 .p-relative {
   position: relative;
 }
-.top-200px {
-  top: 200px;
+.top-100px {
+  top: 100px;
 }
 .w-35pr {
   width: 35%;
@@ -108,7 +109,7 @@ a {
   text-transform: uppercase;
   height: 35px;
   width: 150px;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .w-100pr {
   width: 100%;
@@ -145,4 +146,26 @@ a {
 }
 .br-3px {
   border-radius: 3px;
+}
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.ff-poppins100 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+.ff-poppins500 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.ff-poppins400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.lh-100pr {
+  line-height: 100%;
+}
+.box-shadow-litepink {
+  box-shadow: 1px 10px 15px 0px #efd2d2;
 }
