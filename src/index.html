@@ -13,6 +13,11 @@
     />
     <link
       rel="stylesheet"
+      type="text/css"
+      href="http://localhost:3000/static/css/popper.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +27,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="containner bc-black d-flex jc-center">
       <div class="containner-inner">
@@ -33,13 +39,34 @@
           </div>
           <div class="d-flex ai-center jc-between w-25pr">
             <div class="">
-              <p class="c-white">currency</p>
+              <div id="tooltip-trigger-currency">
+                <p class="c-white tt-uppercase ff-poppins100">USD</p>
+                <div id="tooltip-currency" class="menu tooltip" hidden>
+                  <div class="option">USD</div>
+                  <div class="option">Euro</div>
+                  <div class="option">UAN</div>
+                </div>
+              </div>
             </div>
             <div>
-              <p class="c-white">language</p>
+              <div id="tooltip-trigger-language">
+                <p class="c-white tt-uppercase ff-poppins100">English</p>
+                <div id="tooltip-language" class="menu tooltip" hidden>
+                  <div class="option">English</div>
+                  <div class="option">Spanish</div>
+                  <div class="option">Ukranian</div>
+                </div>
+              </div>
             </div>
             <div>
-              <p class="c-white">my account</p>
+              <div id="tooltip-trigger-account">
+                <p class="c-white tt-uppercase ff-poppins100">my account</p>
+                <div id="tooltip-account" class="menu tooltip" hidden>
+                  <div class="option">my account</div>
+
+                  <div class="option">settings</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -121,4 +148,30 @@
       </div>
     </div>
   </body>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script>
+    const applyTooltip = (button, tooltip, placement = "bottom-end") => {
+      Popper.createPopper(button, tooltip, {
+        placement,
+      });
+      button.addEventListener("mouseenter", (event) => {
+        tooltip.removeAttribute("hidden");
+      });
+      button.addEventListener("mouseleave", (event) => {
+        tooltip.setAttribute("hidden", "");
+      });
+    };
+    applyTooltip(
+      document.querySelector("#tooltip-trigger-currency"),
+      document.querySelector("#tooltip-currency")
+    );
+    applyTooltip(
+      document.querySelector("#tooltip-trigger-language"),
+      document.querySelector("#tooltip-language")
+    );
+    applyTooltip(
+      document.querySelector("#tooltip-trigger-account"),
+      document.querySelector("#tooltip-account")
+    );
+  </script>
 </html>
