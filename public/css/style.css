@@ -169,3 +169,9 @@ a {
 .box-shadow-litepink {
   box-shadow: 1px 10px 15px 0px #efd2d2;
 }
+.display-none {
+  display: none;
+}
+.tt-uppercase {
+  text-transform: uppercase;
+}
