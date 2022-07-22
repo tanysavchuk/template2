@@ -15,9 +15,20 @@ const server = http.createServer(app);
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: __dirname });
 });
-app.post("/save-your-spot", (req, res) => {
-  res.sendFile("template2/src/index.html", { root: __dirname });
-  console.log("POST save-your-spot: ", req.body.userName);
+app.get("/contacts", (req, res) => {
+  res.sendFile("contacts.html", { root: __dirname });
+});
+app.get("/blog", (req, res) => {
+  res.sendFile("blog.html", { root: __dirname });
+});
+app.get("/pages", (req, res) => {
+  res.sendFile("pages.html", { root: __dirname });
+});
+app.get("/shop", (req, res) => {
+  res.sendFile("shop.html", { root: __dirname });
+});
+app.get("/promotion", (req, res) => {
+  res.sendFile("promotion.html", { root: __dirname });
 });
 
 server.listen(3000, () => {
