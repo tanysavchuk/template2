@@ -343,3 +343,12 @@ a:link {
 .a-visited:visited {
   color: lightgray;
 }
+.c-icons {
+  color: rgb(150 150 150);
+}
+.p-right-30px {
+  padding: 0 30px 0 0;
+}
+.c-icons:hover {
+  color: white;
+}
