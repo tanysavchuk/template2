@@ -28,6 +28,32 @@
     />
   </head>
   <body>
+    <div
+      class="containner bg-black d-flex jc-center p-fixed w-100pr h-auto z-index-99999999 display-none mobile-menu"
+    >
+      <div class="containner-inner">
+        <div class="d-flex jc-between">
+          <div>
+            <h2 class="ff-poppins500 fs-25px m-block-0">
+              <span class="c-white">COLO</span><span class="c-red">SHOP</span>
+            </h2>
+          </div>
+          <div class="d-flex jc-flex-end" id="buttonList">
+            <button class="button-fixed"></button>
+          </div>
+        </div>
+        <div class="mobile-menu-hidden" id="menulist">
+          <ul class="list-fixed-block">
+            <li><a href="#" class="c-white">Home </a></li>
+            <li><a href="#" class="c-white">Shop </a></li>
+            <li><a href="#" class="c-white">Promotion </a></li>
+            <li><a href="#" class="c-white">Pages </a></li>
+            <li><a href="#" class="c-white">Blog </a></li>
+            <li><a href="#" class="c-white">Contact </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="containner bg-black d-flex jc-center hidden-menu">
       <div class="containner-inner">
         <div class="d-flex jc-between ai-center">
@@ -110,4 +136,7 @@
     </div>
     <div class="w-100pr d-flex jc-center"><h2>PROMOTION</h2></div>
   </body>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="static/js/tooltip.js"></script>
+  <script src="static/js/menulist.js"></script>
 </html>
