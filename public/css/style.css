@@ -340,6 +340,6 @@ a:active {
 a:link {
   color: rgb(48, 47, 47);
 }
-.a-home:visited {
+.a-visited:visited {
   color: lightgray;
 }

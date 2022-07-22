@@ -13,22 +13,22 @@ app.use(json());
 const server = http.createServer(app);
 
 app.get("/", (req, res) => {
-  res.sendFile("index.html", { root: __dirname });
+  res.sendFile("pages/home/index.html", { root: __dirname });
 });
 app.get("/contacts", (req, res) => {
-  res.sendFile("contacts.html", { root: __dirname });
+  res.sendFile("pages/contacts/index.html", { root: __dirname });
 });
 app.get("/blog", (req, res) => {
-  res.sendFile("blog.html", { root: __dirname });
+  res.sendFile("pages/blog/index.html", { root: __dirname });
 });
 app.get("/pages", (req, res) => {
-  res.sendFile("pages.html", { root: __dirname });
+  res.sendFile("pages/pages/index.html", { root: __dirname });
 });
 app.get("/shop", (req, res) => {
-  res.sendFile("shop.html", { root: __dirname });
+  res.sendFile("pages/shop/index.html", { root: __dirname });
 });
 app.get("/promotion", (req, res) => {
-  res.sendFile("promotion.html", { root: __dirname });
+  res.sendFile("pages/promotion/index.html", { root: __dirname });
 });
 
 server.listen(3000, () => {
