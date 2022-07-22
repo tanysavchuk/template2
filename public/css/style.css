@@ -333,3 +333,13 @@ a {
   overflow: hidden;
   transition: height 0.3s;
 }
+
+a:active {
+  color: black;
+}
+a:link {
+  color: rgb(48, 47, 47);
+}
+.a-home:visited {
+  color: lightgray;
+}
