@@ -210,40 +210,6 @@
     </div>
   </body>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script>
-    const applyTooltip = (button, tooltip, placement = "bottom-end") => {
-      Popper.createPopper(button, tooltip, {
-        placement,
-      });
-      button.addEventListener("mouseenter", (event) => {
-        tooltip.removeAttribute("hidden");
-      });
-      button.addEventListener("mouseleave", (event) => {
-        tooltip.setAttribute("hidden", "");
-      });
-    };
-    applyTooltip(
-      document.querySelector("#tooltip-trigger-currency"),
-      document.querySelector("#tooltip-currency")
-    );
-    applyTooltip(
-      document.querySelector("#tooltip-trigger-language"),
-      document.querySelector("#tooltip-language")
-    );
-    applyTooltip(
-      document.querySelector("#tooltip-trigger-account"),
-      document.querySelector("#tooltip-account")
-    );
-
-    const buttonList = document.getElementById("buttonList");
-    const menulist = document.getElementById("menulist");
-    buttonList.addEventListener("click", (event) => {
-      if (menulist.getAttribute("class") === "mobile-menu-hidden") {
-        menulist.setAttribute("class", "mobile-menu-visible");
-      } else {
-        menulist.setAttribute("class", "mobile-menu-hidden");
-      }
-    });
-    console.log("location: ", window.location.pathname);
-  </script>
+  <script src="static/js/tooltip.js"></script>
+  <script src="static/js/menulist.js"></script>
 </html>
