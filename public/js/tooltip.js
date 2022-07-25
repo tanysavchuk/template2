@@ -1,5 +1,5 @@
 const applyTooltip = (button, tooltip, placement = "bottom-end") => {
-  const popper = Popper.createPopper(button, tooltip, {
+  Popper.createPopper(button, tooltip, {
     placement,
   });
   button.addEventListener("mouseenter", (event) => {
