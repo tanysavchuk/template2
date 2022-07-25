@@ -352,3 +352,9 @@ a:link {
 .c-icons:hover {
   color: white;
 }
+.border-bottom-gray {
+  border-bottom: 2px solid gray;
+}
+.p-5px {
+  padding: 5px;
+}
