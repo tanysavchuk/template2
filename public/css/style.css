@@ -352,9 +352,31 @@ a:link {
 .c-icons:hover {
   color: white;
 }
+
 .border-bottom-gray {
   border-bottom: 2px solid gray;
 }
 .p-5px {
   padding: 5px;
+}
+.jc-flex-end {
+  justify-content: flex-end;
+}
+.h-30px {
+  height: 30px;
+}
+.p-0px {
+  padding: 0;
+}
+.border-1px-lightgray {
+  border: 1px solid lightgray;
+}
+.bg-whitegray {
+  background: #cbc9c9;
+}
+.w-30px {
+  width: 30px;
+}
+.c-lightgray {
+  color: #9d9d9d;
 }
