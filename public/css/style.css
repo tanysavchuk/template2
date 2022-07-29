@@ -352,9 +352,40 @@ a:link {
 .c-icons:hover {
   color: white;
 }
+
 .border-bottom-gray {
   border-bottom: 2px solid gray;
 }
 .p-5px {
   padding: 5px;
+}
+.jc-flex-end {
+  justify-content: flex-end;
+}
+.h-30px {
+  height: 30px;
+}
+.p-0px {
+  padding: 0;
+}
+
+.w-30px {
+  width: 30px;
+}
+
+.input-serch-hidden {
+  overflow: hidden;
+}
+
+.jc-end {
+  justify-content: end;
+}
+.h-60px {
+  height: 60px;
+}
+
+.seacrh-input {
+  width: 100%;
+  height: 25px;
+  border: 1px solid lightgray;
 }
