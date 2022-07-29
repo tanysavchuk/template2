@@ -368,15 +368,24 @@ a:link {
 .p-0px {
   padding: 0;
 }
-.border-1px-lightgray {
-  border: 1px solid lightgray;
-}
-.bg-whitegray {
-  background: #cbc9c9;
-}
+
 .w-30px {
   width: 30px;
 }
-.c-lightgray {
-  color: #9d9d9d;
+
+.input-serch-hidden {
+  overflow: hidden;
+}
+
+.jc-end {
+  justify-content: end;
+}
+.h-60px {
+  height: 60px;
+}
+
+.seacrh-input {
+  width: 100%;
+  height: 25px;
+  border: 1px solid lightgray;
 }
